@@ -16,11 +16,69 @@ app.controller('AutoDCController', function($scope, $http) {
 
     $scope.autoDCCrossfilter = null;
 
+    $scope.initialize = function() {
+        //Get a list of example csv files to populate the drop-down with.
+        $http.get('exampleDataSetList.csv').success(function(data) {
+            $scope.exampleDataSets = Papa.parse(data, {
+                header: true,
+                dynamicTyping: true
+            }).data;
+        })
+    }
+
+    //"Use this example" button
+    $scope.loadExampleData = function() {
+        $http.get('./csv_examples/' + $scope.selectedCsvExample.FileName).success(function(data) {
+            $scope.loadedCsvData = Papa.parse(data, {
+                header: true,
+                dynamicTyping: true
+            }).data;
+            $scope.generateTableData($scope.loadedCsvData)
+        })
+    }
+
+    //"Browse for CSV" button
+    $("#csv").bind("change", function(event) {
+        var reader = new FileReader();
+        reader.onload = function(theFile) {
+            try {
+                $scope.loadedCsvData = Papa.parse(theFile.target.result, {
+                    header: true,
+                    dynamicTyping: true
+                }).data;
+                $scope.generateTableData($scope.loadedCsvData)
+                $scope.$apply();
+            } catch (e) {
+                alert("CSV Parse error.");
+                return;
+            }
+        };
+        reader.readAsText(event.target.files[0]);
+    });
 
 
+    //Initializes the configuration data that is used in both the table and the generated charts.
+    $scope.generateTableData = function(csvData) {
+        //Get the keys of our data. For each key, initialize an object
 
-    //take our table data, make some chartdata
-    $scope.GenerateCharts = function() {
+        $scope.tableData = _.map(_.keys(csvData[0]), function(key) {
+            return {
+                columnName: key,
+                chart: false,
+                dataType: 'string',
+                chartType: 'row',
+                cap: 10,
+                groupBy: false,
+                ordering: true,
+                colorScale: "category10"
+
+            }
+        })
+    }
+
+
+    //Use the now-modified table data to create the chart objects.
+    $scope.generateChartData = function() {
 
         //Reduce the data needed to chart
         //TODO: Consider not doing this as it causes the output table to only show selected columns. (could be good or bad for the user)
@@ -79,69 +137,6 @@ app.controller('AutoDCController', function($scope, $http) {
             .columns(dcDataTableColumns);
 
     }
-
-    //"Use this example" button
-    $scope.loadExampleData = function() {
-        $http.get('./csv_examples/' + $scope.selectedCsvExample.FileName).success(function(data) {
-            $scope.loadedCsvData = Papa.parse(data, {
-                header: true,
-                dynamicTyping: true
-            }).data;
-            $scope.generateTableData($scope.loadedCsvData)
-        })
-    }
-
-    //"Browse for CSV" button
-    $("#csv").bind("change", function(event) {
-        var reader = new FileReader();
-        reader.onload = function(theFile) {
-            try {
-                $scope.loadedCsvData = Papa.parse(theFile.target.result, {
-                    header: true,
-                    dynamicTyping: true
-                }).data;
-                $scope.generateTableData($scope.loadedCsvData)
-                $scope.$apply();
-            } catch (e) {
-                alert("CSV Parse error.");
-                return;
-            }
-        };
-        reader.readAsText(event.target.files[0]);
-    });
-
-
-    //Initializes the configuration data that is used in both the table and the generated charts.
-    $scope.generateTableData = function(csvData) {
-        //Get the keys of our data
-        //For each key, initialize an object
-
-        $scope.tableData = _.map(_.keys(csvData[0]), function(key) {
-            return {
-                columnName: key,
-                chart: false,
-                dataType: 'string',
-                chartType: 'row',
-                cap: 10,
-                groupBy: false,
-                ordering: true,
-                colorScale: "category10"
-
-            }
-        })
-    }
-
-    $scope.initialize = function() {
-
-        //Get a list of example csv files to populate the drop-down with.
-        $http.get('exampleDataSetList.csv').success(function(data) {
-            $scope.exampleDataSets = Papa.parse(data, {
-                header: true,
-                dynamicTyping: true
-            }).data;
-        })
-    }
-
 
 })
 
