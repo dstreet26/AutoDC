@@ -74,6 +74,8 @@ app.controller('AutoDCController', function($scope, $http) {
 
             }
         })
+        //Set the first row to have the groupBy radio button checked
+        $scope.tableData[0].groupBy = true;
     }
 
 
@@ -105,6 +107,8 @@ app.controller('AutoDCController', function($scope, $http) {
                 chartObject.cap = tableRow.cap;
                 chartObject.ordering = tableRow.ordering;
                 chartObject.colorScale = tableRow.colorScale;
+                chartObject.groupBy = tableRow.groupBy;
+                chartObject.columnName = tableRow.columnName;
 
                 chartObject.dimension = $scope.autoDCCrossfilter.dimension(function(d) {
                     return d[tableRow.columnName]
@@ -127,11 +131,13 @@ app.controller('AutoDCController', function($scope, $http) {
         $scope.dcCounter.dimension($scope.autoDCCrossfilter).group($scope.autoDCCrossfilter.groupAll())
         $scope.dcDataTable = dc.dataTable('#dcDataTable');
 
-        //TODO: Switch this to the order column that was chosen by the user
+        //Get the orderBy radio button
+        var groupByChartColumn = _.find($scope.chartData, 'groupBy')
+
         $scope.dcDataTable
-            .dimension(firstdimension)
+            .dimension(groupByChartColumn.dimension)
             .group(function(d) {
-                return d[firstcolumn];
+                return d[groupByChartColumn.columnName];
             })
             .size(50)
             .columns(dcDataTableColumns);

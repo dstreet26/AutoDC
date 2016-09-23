@@ -67,14 +67,15 @@
                     </tr>
                     <tr ng-repeat="row in tableData">
                         <td>{{row.columnName}}</td>
-                        <!-- <td>{{row.chart}}</td> -->
                         <td>
                             <input type="checkbox" ng-model="row.chart">
                         </td>
                         <td>{{row.dataType}}</td>
                         <td>{{row.chartType}}</td>
                         <td>{{row.cap}}</td>
-                        <td>{{row.groupBy}}</td>
+                        <td>
+                            <input type="radio" name="orderByGroup" ng-model="row.groupBy" ng-value="true">
+                        </td>
                         <td>{{row.ordering}}</td>
                         <td>{{row.colorScale}}</td>
                     </tr>
