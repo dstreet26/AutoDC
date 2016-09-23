@@ -1,0 +1,26 @@
+{
+  "name": "AutoDC",
+  "authors": [
+    "David Streeter <dstreet26@gmail.com>"
+  ],
+  "description": "Create DC.js charts from csv files.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://dstreet26.com/AutoDC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.12",
+    "bootstrap": "3.3.7",
+    "d3": "3.5.17",
+    "moment": "2.15.1",
+    "papaparse": "4.1.2",
+    "lodash": "4.16.1",
+    "crossfilter": "1.3.12"
+  }
+}

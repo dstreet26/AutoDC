@@ -1,0 +1,762 @@
+Title,Description,FileName
+Cars (multivariate),Raw.js Cars Example,raw_multivariate.csv
+Cocktails (correlations),Raw.js Cocktails Example,raw_correlations.csv
+Music (flows),Raw.js Music Example,raw_flows.csv
+Movies (dispersions),Raw.js Movies Example,raw_dispersions.csv
+AirPassengers,Monthly Airline Passenger Numbers 1949-1960,AirPassengers.csv
+BJsales,Sales Data with Leading Indicator,BJsales.csv
+BOD,Biochemical Oxygen Demand,BOD.csv
+Formaldehyde,Determination of Formaldehyde,Formaldehyde.csv
+HairEyeColor,Hair and Eye Color of Statistics Students,HairEyeColor.csv
+InsectSprays,Effectiveness of Insect Sprays,InsectSprays.csv
+JohnsonJohnson,Quarterly Earnings per Johnson & Johnson Share,JohnsonJohnson.csv
+LakeHuron,Level of Lake Huron 1875-1972,LakeHuron.csv
+LifeCycleSavings,Intercountry Life-Cycle Savings Data,LifeCycleSavings.csv
+Nile,Flow of the River Nile,Nile.csv
+OrchardSprays,Potency of Orchard Sprays,OrchardSprays.csv
+PlantGrowth,Results from an Experiment on Plant Growth,PlantGrowth.csv
+Puromycin,Reaction Velocity of an Enzymatic Reaction,Puromycin.csv
+Titanic,Survival of passengers on the Titanic,Titanic.csv
+ToothGrowth,The Effect of Vitamin C on Tooth Growth in Guinea Pigs,ToothGrowth.csv
+UCBAdmissions,Student Admissions at UC Berkeley,UCBAdmissions.csv
+UKDriverDeaths,Road Casualties in Great Britain 1969-84,UKDriverDeaths.csv
+UKgas,UK Quarterly Gas Consumption,UKgas.csv
+USAccDeaths,Accidental Deaths in the US 1973-1978,USAccDeaths.csv
+USArrests,Violent Crime Rates by US State,USArrests.csv
+USJudgeRatings,Lawyers' Ratings of State Judges in the US Superior Court,USJudgeRatings.csv
+USPersonalExpenditure,Personal Expenditure Data,USPersonalExpenditure.csv
+VADeaths,Death Rates in Virginia (1940),VADeaths.csv
+WWWusage,Internet Usage per Minute,WWWusage.csv
+WorldPhones,The World's Telephones,WorldPhones.csv
+airmiles,"Passenger Miles on Commercial US Airlines, 1937-1960",airmiles.csv
+airquality,New York Air Quality Measurements,airquality.csv
+anscombe,Anscombe's Quartet of 'Identical' Simple Linear Regressions,anscombe.csv
+attenu,The Joyner-Boore Attenuation Data,attenu.csv
+attitude,The Chatterjee-Price Attitude Data,attitude.csv
+austres,Quarterly Time Series of the Number of Australian Residents,austres.csv
+cars,Speed and Stopping Distances of Cars,cars.csv
+chickwts,Chicken Weights by Feed Type,chickwts.csv
+co2,Mauna Loa Atmospheric CO2 Concentration,co2.csv
+crimtab,Student's 3000 Criminals Data,crimtab.csv
+discoveries,Yearly Numbers of Important Discoveries,discoveries.csv
+esoph,"Smoking, Alcohol and (O)esophageal Cancer",esoph.csv
+euro,Conversion Rates of Euro Currencies,euro.csv
+faithful,Old Faithful Geyser Data,faithful.csv
+freeny,Freeny's Revenue Data,freeny.csv
+infert,Infertility after Spontaneous and Induced Abortion,infert.csv
+iris,Edgar Anderson's Iris Data,iris.csv
+islands,Areas of the World's Major Landmasses,islands.csv
+lh,Luteinizing Hormone in Blood Samples,lh.csv
+longley,Longley's Economic Regression Data,longley.csv
+lynx,Annual Canadian Lynx trappings 1821-1934,lynx.csv
+morley,Michelson Speed of Light Data,morley.csv
+mtcars,Motor Trend Car Road Tests,mtcars.csv
+nhtemp,Average Yearly Temperatures in New Haven,nhtemp.csv
+nottem,"Average Monthly Temperatures at Nottingham, 1920-1939",nottem.csv
+npk,"Classical N, P, K Factorial Experiment",npk.csv
+occupationalStatus,Occupational Status of Fathers and their Sons,occupationalStatus.csv
+precip,Annual Precipitation in US Cities,precip.csv
+presidents,Quarterly Approval Ratings of US Presidents,presidents.csv
+pressure,Vapor Pressure of Mercury as a Function of Temperature,pressure.csv
+quakes,Locations of Earthquakes off Fiji,quakes.csv
+randu,Random Numbers from Congruential Generator RANDU,randu.csv
+rivers,Lengths of Major North American Rivers,rivers.csv
+rock,Measurements on Petroleum Rock Samples,rock.csv
+sleep,Student's Sleep Data,sleep.csv
+stackloss,Brownlee's Stack Loss Plant Data,stackloss.csv
+sunspot.month,"Monthly Sunspot Data, from 1749 to ""Present""",sunspot.month.csv
+sunspot.year,"Yearly Sunspot Data, 1700-1988",sunspot.year.csv
+sunspots,"Monthly Sunspot Numbers, 1749-1983",sunspots.csv
+swiss,Swiss Fertility and Socioeconomic Indicators (1888) Data,swiss.csv
+treering,"Yearly Treering Data, -6000-1979",treering.csv
+trees,"Girth, Height and Volume for Black Cherry Trees",trees.csv
+uspop,Populations Recorded by the US Census,uspop.csv
+volcano,Topographic Information on Auckland's Maunga Whau Volcano,volcano.csv
+warpbreaks,The Number of Breaks in Yarn during Weaving,warpbreaks.csv
+women,Average Heights and Weights for American Women,women.csv
+acme,Monthly Excess Returns,acme.csv
+aids,Delay in AIDS Reporting in England and Wales,aids.csv
+aircondit,Failures of Air-conditioning Equipment,aircondit.csv
+aircondit7,Failures of Air-conditioning Equipment,aircondit7.csv
+amis,Car Speeding and Warning Signs,amis.csv
+aml,Remission Times for Acute Myelogenous Leukaemia,aml.csv
+bigcity,Population of U.S. Cities,bigcity.csv
+brambles,Spatial Location of Bramble Canes,brambles.csv
+breslow,Smoking Deaths Among Doctors,breslow.csv
+calcium,Calcium Uptake Data,calcium.csv
+cane,Sugar-cane Disease Data,cane.csv
+capability,Simulated Manufacturing Process Data,capability.csv
+catsM,Weight Data for Domestic Cats,catsM.csv
+cav,Position of Muscle Caveolae,cav.csv
+cd4,CD4 Counts for HIV-Positive Patients,cd4.csv
+channing,Channing House Data,channing.csv
+city,Population of U.S. Cities,city.csv
+claridge,Genetic Links to Left-handedness,claridge.csv
+cloth,Number of Flaws in Cloth,cloth.csv
+co.transfer,Carbon Monoxide Transfer,co.transfer.csv
+coal,Dates of Coal Mining Disasters,coal.csv
+darwin,Darwin's Plant Height Differences,darwin.csv
+dogs,Cardiac Data for Domestic Dogs,dogs.csv
+downs.bc,Incidence of Down's Syndrome in British Columbia,downs.bc.csv
+ducks,Behavioral and Plumage Characteristics of Hybrid Ducks,ducks.csv
+fir,Counts of Balsam-fir Seedlings,fir.csv
+frets,Head Dimensions in Brothers,frets.csv
+grav,Acceleration Due to Gravity,grav.csv
+gravity,Acceleration Due to Gravity,gravity.csv
+hirose,Failure Time of PET Film,hirose.csv
+islay,Jura Quartzite Azimuths on Islay,islay.csv
+manaus,Average Heights of the Rio Negro river at Manaus,manaus.csv
+melanoma,Survival from Malignant Melanoma,melanoma.csv
+motor,Data from a Simulated Motorcycle Accident,motor.csv
+neuro,Neurophysiological Point Process Data,neuro.csv
+nitrofen,Toxicity of Nitrofen in Aquatic Systems,nitrofen.csv
+nodal,Nodal Involvement in Prostate Cancer,nodal.csv
+nuclear,Nuclear Power Station Construction Data,nuclear.csv
+paulsen,Neurotransmission in Guinea Pig Brains,paulsen.csv
+poisons,Animal Survival Times,poisons.csv
+polar,Pole Positions of New Caledonian Laterites,polar.csv
+remission,Cancer Remission and Cell Activity,remission.csv
+salinity,Water Salinity and River Discharge,salinity.csv
+survival,Survival of Rats after Radiation Doses,survival.csv
+tau,Tau Particle Decay Modes,tau.csv
+tuna,Tuna Sighting Data,tuna.csv
+urine,Urine Analysis Data,urine.csv
+wool,Australian Relative Wool Prices,wool.csv
+aids,data from Section 1.19,aids.csv
+alloauto,data from Section 1.9,alloauto.csv
+allograft,"data from Exercise 13.1, p418",allograft.csv
+azt,"data from Exercise 4.7, p122",azt.csv
+baboon,"data from Exercise 5.8, p147",baboon.csv
+bcdeter,data from Section 1.18,bcdeter.csv
+bfeed,data from Section 1.14,bfeed.csv
+bmt,data from Section 1.3,bmt.csv
+bnct,"data from Exercise 7.7, p223",bnct.csv
+btrial,data from Section 1.5,btrial.csv
+burn,data from Section 1.6,burn.csv
+channing,data from Section 1.16,channing.csv
+drug6mp,data from Section 1.2,drug6mp.csv
+drughiv,"data from Exercise 7.6, p222",drughiv.csv
+hodg,data from Section 1.10,hodg.csv
+kidney,data from Section 1.4,kidney.csv
+kidrecurr,Data on 38 individuals using a kidney dialysis machine,kidrecurr.csv
+kidtran,data from Section 1.7,kidtran.csv
+larynx,data from Section 1.8,larynx.csv
+lung,"data from Exercise 4.4, p120",lung.csv
+pneumon,data from Section 1.13,pneumon.csv
+psych,data from Section 1.15,psych.csv
+rats,"data from Exercise 7.13, p225",rats.csv
+std,data from Section 1.12,std.csv
+stddiag,"data from Exercise 5.6, p146",stddiag.csv
+tongue,data from Section 1.11,tongue.csv
+twins,"data from Exercise 7.14, p225",twins.csv
+Animals2,Brain and Body Weights for 65 Species of Land Animals,Animals2.csv
+CrohnD,Crohn's Disease Adverse Events Data,CrohnD.csv
+NOxEmissions,NOx Air Pollution Data,NOxEmissions.csv
+SiegelsEx,Siegel's Exact Fit Example Data,SiegelsEx.csv
+aircraft,Aircraft Data,aircraft.csv
+airmay,Air Quality Data,airmay.csv
+alcohol,Alcohol Solubility in Water Data,alcohol.csv
+ambientNOxCH,Daily Means of NOx (mono-nitrogen oxides) in air,ambientNOxCH.csv
+bushfire,Campbell Bushfire Data,bushfire.csv
+carrots,Insect Damages on Carrots,carrots.csv
+cloud,Cloud point of a Liquid,cloud.csv
+coleman,Coleman Data Set,coleman.csv
+condroz,Condroz Data,condroz.csv
+cushny,Cushny and Peebles Prolongation of Sleep Data,cushny.csv
+delivery,Delivery Time Data,delivery.csv
+education,Education Expenditure Data,education.csv
+epilepsy,Epilepsy Attacks Data Set,epilepsy.csv
+exAM,Example Data of Antille and May - for Simple Regression,exAM.csv
+foodstamp,Food Stamp Program Participation,foodstamp.csv
+hbk,"Hawkins, Bradu, Kass's Artificial Data",hbk.csv
+heart,Heart Catherization Data,heart.csv
+kootenay,Waterflow Measurements of Kootenay River in Libby and Newgate,kootenay.csv
+lactic,Lactic Acid Concentration Measurement Data,lactic.csv
+milk,Daudin's Milk Composition Data,milk.csv
+pension,Pension Funds Data,pension.csv
+phosphor,Phosphorus Content Data,phosphor.csv
+pilot,Pilot-Plant Data,pilot.csv
+possumDiv,Possum Diversity Data,possumDiv.csv
+pulpfiber,Pulp Fiber and Paper Data,pulpfiber.csv
+radarImage,Satellite Radar Image Data from near Munich,radarImage.csv
+salinity,Salinity Data,salinity.csv
+starsCYG,Hertzsprung-Russell Diagram Data of Star Cluster CYG OB1,starsCYG.csv
+telef,Number of International Calls from Belgium,telef.csv
+toxicity,Toxicity of Carboxylic Acids Data,toxicity.csv
+vaso,Vaso Constriction Skin Data Set,vaso.csv
+wagnerGrowth,Wagner's Hannover Employment Growth Data,wagnerGrowth.csv
+wood,Modified Data on Wood Specific Gravity,wood.csv
+AMSsurvey,American Math Society Survey Data,AMSsurvey.csv
+Adler,Experimenter Expectations,Adler.csv
+Angell,Moral Integration of American Cities,Angell.csv
+Anscombe,U. S. State Public-School Expenditures,Anscombe.csv
+Baumann,Methods of Teaching Reading Comprehension,Baumann.csv
+Bfox,Canadian Women's Labour-Force Participation,Bfox.csv
+Blackmoor,Exercise Histories of Eating-Disordered and Control Subjects,Blackmoor.csv
+Burt,Fraudulent Data on IQs of Twins Raised Apart,Burt.csv
+CanPop,Canadian Population Data,CanPop.csv
+Chile,Voting Intentions in the 1988 Chilean Plebiscite,Chile.csv
+Chirot,The 1907 Romanian Peasant Rebellion,Chirot.csv
+Cowles,Cowles and Davis's Data on Volunteering,Cowles.csv
+Davis,Self-Reports of Height and Weight,Davis.csv
+DavisThin,Davis's Data on Drive for Thinness,DavisThin.csv
+Depredations,Minnesota Wolf Depredation Data,Depredations.csv
+Duncan,Duncan's Occupational Prestige Data,Duncan.csv
+Ericksen,The 1980 U.S. Census Undercount,Ericksen.csv
+Florida,Florida County Voting,Florida.csv
+Freedman,Crowding and Crime in U. S. Metropolitan Areas,Freedman.csv
+Friendly,Format Effects on Recall,Friendly.csv
+Ginzberg,Data on Depression,Ginzberg.csv
+Greene,Refugee Appeals,Greene.csv
+Guyer,Anonymity and Cooperation,Guyer.csv
+Hartnagel,Canadian Crime-Rates Time Series,Hartnagel.csv
+Highway1,Highway Accidents,Highway1.csv
+Leinhardt,Data on Infant-Mortality,Leinhardt.csv
+Mandel,Contrived Collinear Data,Mandel.csv
+Migration,Canadian Interprovincial Migration Data,Migration.csv
+Moore,"Status, Authoritarianism, and Conformity",Moore.csv
+Mroz,U.S. Women's Labor-Force Participation,Mroz.csv
+OBrienKaiser,O'Brien and Kaiser's Repeated-Measures Data,OBrienKaiser.csv
+Ornstein,Interlocking Directorates Among Major Canadian Firms,Ornstein.csv
+Pottery,Chemical Composition of Pottery,Pottery.csv
+Prestige,Prestige of Canadian Occupations,Prestige.csv
+Quartet,Four Regression Datasets,Quartet.csv
+Robey,Fertility and Contraception,Robey.csv
+SLID,Survey of Labour and Income Dynamics,SLID.csv
+Sahlins,Agricultural Production in Mazulu Village,Sahlins.csv
+Salaries,Salaries for Professors,Salaries.csv
+Soils,Soil Compositions of Physical and Chemical Characteristics,Soils.csv
+States,Education and Related Statistics for the U.S. States,States.csv
+Transact,Transaction data,Transact.csv
+UN,GDP and Infant Mortality,UN.csv
+USPop,Population of the United States,USPop.csv
+Vocab,Vocabulary and Education,Vocab.csv
+WeightLoss,Weight Loss Data,WeightLoss.csv
+Womenlf,Canadian Women's Labour-Force Participation,Womenlf.csv
+Wool,Wool data,Wool.csv
+agriculture,European Union Agricultural Workforces,agriculture.csv
+animals,Attributes of Animals,animals.csv
+chorSub,Subset of C-horizon of Kola Data,chorSub.csv
+flower,Flower Characteristics,flower.csv
+plantTraits,Plant Species Traits Data,plantTraits.csv
+pluton,Isotopic Composition Plutonium Batches,pluton.csv
+ruspini,Ruspini Data,ruspini.csv
+votes.repub,Votes for Republican Candidate in Presidential Elections,votes.repub.csv
+xclara,Bivariate Data Set with 3 Clusters,xclara.csv
+affairs,affairs,affairs.csv
+azcabgptca,azcabgptca,azcabgptca.csv
+azdrg112,azdrg112,azdrg112.csv
+azpro,azpro,azpro.csv
+azprocedure,azprocedure,azprocedure.csv
+badhealth,badhealth,badhealth.csv
+fasttrakg,fasttrakg,fasttrakg.csv
+fishing,fishing,fishing.csv
+lbw,lbw,lbw.csv
+lbwgrp,lbwgrp,lbwgrp.csv
+loomis,loomis,loomis.csv
+mdvis,mdvis,mdvis.csv
+medpar,medpar,medpar.csv
+nuts,nuts,nuts.csv
+rwm,rwm,rwm.csv
+rwm1984,rwm1984,rwm1984.csv
+rwm5yr,rwm5yr,rwm5yr.csv
+ships,ships,ships.csv
+smoking,smoking,smoking.csv
+titanic,titanic,titanic.csv
+titanicgrp,titanicgrp,titanicgrp.csv
+Accident,Ship Accidents,Accident.csv
+Airline,Cost for U.S. Airlines,Airline.csv
+Airq,Air Quality for Californian Metropolitan Areas,Airq.csv
+Benefits,Unemployement of Blue Collar Workers,Benefits.csv
+Bids,Bids Received By U.S. Firms,Bids.csv
+BudgetFood,Budget Share of Food for Spanish Households,BudgetFood.csv
+BudgetItaly,Budget Shares for Italian Households,BudgetItaly.csv
+BudgetUK,Budget Shares of British Households,BudgetUK.csv
+Bwages,Wages in Belgium,Bwages.csv
+CPSch3,Earnings from the Current Population Survey,CPSch3.csv
+CRANpackages,Growth of CRAN,CRANpackages.csv
+Capm,Stock Market Data,Capm.csv
+Car,Stated Preferences for Car Choice,Car.csv
+Caschool,The California Test Score Data Set,Caschool.csv
+Catsup,Choice of Brand for Catsup,Catsup.csv
+Cigar,Cigarette Consumption,Cigar.csv
+Cigarette,The Cigarette Consumption Panel Data Set,Cigarette.csv
+Clothing,Sales Data of Men's Fashion Stores,Clothing.csv
+Computers,Prices of Personal Computers,Computers.csv
+Cracker,Choice of Brand for Crakers,Cracker.csv
+Crime,Crime in North Carolina,Crime.csv
+DM,DM Dollar Exchange Rate,DM.csv
+Diamond,Pricing the C's of Diamond Stones,Diamond.csv
+Doctor,Number of Doctor Visits,Doctor.csv
+DoctorAUS,Doctor Visits in Australia,DoctorAUS.csv
+DoctorContacts,Contacts With Medical Doctor,DoctorContacts.csv
+Earnings,Earnings for Three Age Groups,Earnings.csv
+Electricity,Cost Function for Electricity Producers,Electricity.csv
+Fair,Extramarital Affairs Data,Fair.csv
+Fatality,Drunk Driving Laws and Traffic Deaths,Fatality.csv
+Fishing,Choice of Fishing Mode,Fishing.csv
+Forward,Exchange Rates of US Dollar Against Other Currencies,Forward.csv
+FriendFoe,Data from the Television Game Show Friend Or Foe ?,FriendFoe.csv
+Garch,Daily Observations on Exchange Rates of the US Dollar Against Other Currencies,Garch.csv
+Gasoline,Gasoline Consumption,Gasoline.csv
+Griliches,Wage Datas,Griliches.csv
+Grunfeld,Grunfeld Investment Data,Grunfeld.csv
+HC,Heating and Cooling System Choice in Newly Built Houses in California,HC.csv
+HI,Health Insurance and Hours Worked By Wives,HI.csv
+Hdma,The Boston HDMA Data Set,Hdma.csv
+Heating,Heating System Choice in California Houses,Heating.csv
+Hedonic,Hedonic Prices of Cencus Tracts in Boston,Hedonic.csv
+Housing,Sales Prices of Houses in the City of Windsor,Housing.csv
+Icecream,Ice Cream Consumption,Icecream.csv
+Journals,Economic Journals Dat Set,Journals.csv
+Kakadu,Willingness to Pay for the Preservation of the Kakadu National Park,Kakadu.csv
+Ketchup,Choice of Brand for Ketchup,Ketchup.csv
+Klein,Klein's Model I,Klein.csv
+LaborSupply,Wages and Hours Worked,LaborSupply.csv
+Labour,Belgian Firms,Labour.csv
+MCAS,The Massashusets Test Score Data Set,MCAS.csv
+Males,Wages and Education of Young Males,Males.csv
+Mathlevel,Level of Calculus Attained for Students Taking Advanced Micro-economics,Mathlevel.csv
+MedExp,Structure of Demand for Medical Care,MedExp.csv
+Metal,Production for SIC 33,Metal.csv
+Mode,Mode Choice,Mode.csv
+ModeChoice,Data to Study Travel Mode Choice,ModeChoice.csv
+Mofa,"International Expansion of U.S. Mofa's (majority-owned Foreign Affiliates in Fire (finance, Insurance and Real Estate)",Mofa.csv
+Mroz,Labor Supply Data,Mroz.csv
+MunExp,Municipal Expenditure Data,MunExp.csv
+NaturalPark,Willingness to Pay for the Preservation of the Alentejo Natural Park,NaturalPark.csv
+Nerlove,"Cost Function for Electricity Producers, 1955",Nerlove.csv
+OFP,Visits to Physician Office,OFP.csv
+Oil,Oil Investment,Oil.csv
+PSID,Panel Survey of Income Dynamics,PSID.csv
+Participation,Labor Force Participation,Participation.csv
+PatentsHGH,Dynamic Relation Between Patents and R&D,PatentsHGH.csv
+PatentsRD,"Patents, R&D and Technological Spillovers for a Panel of Firms",PatentsRD.csv
+Pound,Pound-dollar Exchange Rate,Pound.csv
+Produc,Us States Production,Produc.csv
+RetSchool,Return to Schooling,RetSchool.csv
+SP500,Returns on Standard & Poor's 500 Index,SP500.csv
+Schooling,Wages and Schooling,Schooling.csv
+Somerville,Visits to Lake Somerville,Somerville.csv
+Star,Effects on Learning of Small Class Sizes,Star.csv
+Strike,Strike Duration Data,Strike.csv
+StrikeDur,Strikes Duration,StrikeDur.csv
+StrikeNb,Number of Strikes in Us Manufacturing,StrikeNb.csv
+SumHes,The Penn Table,SumHes.csv
+Tobacco,Households Tobacco Budget Share,Tobacco.csv
+Train,Stated Preferences for Train Traveling,Train.csv
+TranspEq,Statewide Data on Transportation Equipment Manufacturing,TranspEq.csv
+Treatment,Evaluating Treatment Effect of Training on Earnings,Treatment.csv
+Tuna,Choice of Brand for Tuna,Tuna.csv
+USFinanceIndustry,US Finance Industry Profits,USFinanceIndustry.csv
+USclassifiedDocuments,Official Secrecy of the United States Government,USclassifiedDocuments.csv
+USstateAbbreviations,Standard abbreviations for states of the United States,USstateAbbreviations.csv
+UStaxWords,Number of Words in US Tax Law,UStaxWords.csv
+UnempDur,Unemployment Duration,UnempDur.csv
+Unemployment,Unemployment Duration,Unemployment.csv
+University,Provision of University Teaching and Research,University.csv
+VietNamH,Medical Expenses in Viet-nam (household Level),VietNamH.csv
+VietNamI,Medical Expenses in Viet-nam (individual Level),VietNamI.csv
+Wages,Panel Datas of Individual Wages,Wages.csv
+Wages1,"Wages, Experience and Schooling",Wages1.csv
+Workinghours,Wife Working Hours,Workinghours.csv
+Yen,Yen-dollar Exchange Rate,Yen.csv
+Yogurt,Choice of Brand for Yogurts,Yogurt.csv
+bankingCrises,Countries in Banking Crises,bankingCrises.csv
+incomeInequality,Income Inequality in the US,incomeInequality.csv
+nonEnglishNames,Names with Character Set Problems,nonEnglishNames.csv
+politicalKnowledge,Political knowledge in the US and Europe,politicalKnowledge.csv
+PD,"A study of Parkinson's disease and APOE, LRRK2, SNCA makers",PD.csv
+aldh2,ALDH2 markers and Alcoholism,aldh2.csv
+apoeapoc,APOE/APOC1 markers and Alzheimer's,apoeapoc.csv
+cf,Cystic fibrosis data,cf.csv
+crohn,Crohn's disease data,crohn.csv
+fa,Friedreich Ataxia data,fa.csv
+fsnps,A case-control data involving four SNPs with missing genotype,fsnps.csv
+hla,The HLA data,hla.csv
+hr1420,An example data for Manhattan plot with annotation,hr1420.csv
+l51,An example pedigree data,l51.csv
+lukas,An example pedigree,lukas.csv
+mao,A study of Parkinson's disease and MAO gene,mao.csv
+mfblong,Example data for ACEnucfam,mfblong.csv
+mhtdata,An example data for Manhattan plot,mhtdata.csv
+nep499,A study of Alzheimer's disease with eight SNPs and APOE,nep499.csv
+diamonds,"Prices of 50,000 round cut diamonds",diamonds.csv
+economics,US economic time series.,economics.csv
+midwest,Midwest demographics.,midwest.csv
+movies,Movie information and user ratings from IMDB.com.,movies.csv
+mpg,Fuel economy data from 1999 and 2008 for 38 popular models of car,mpg.csv
+msleep,An updated and expanded version of the mammals sleep dataset.,msleep.csv
+presidential,Terms of 10 presidents from Eisenhower to Bush W.,presidential.csv
+seals,Vector field of seal movements.,seals.csv
+Arbuthnot,Arbuthnot's data on male and female birth ratios in London from 1629-1710.,Arbuthnot.csv
+Bowley,"Bowley's data on values of British and Irish trade, 1855-1899",Bowley.csv
+Cavendish,Cavendish's Determinations of the Density of the Earth,Cavendish.csv
+ChestSizes,Chest measurements of 5738 Scottish Militiamen,ChestSizes.csv
+CushnyPeebles,Cushny-Peebles Data: Soporific Effects of Scopolamine Derivatives,CushnyPeebles.csv
+CushnyPeeblesN,Cushny-Peebles Data: Soporific Effects of Scopolamine Derivatives,CushnyPeeblesN.csv
+Dactyl,Edgeworth's counts of dactyls in Virgil's Aeneid,Dactyl.csv
+DrinksWages,Elderton and Pearson's (1910) data on drinking and wages,DrinksWages.csv
+Fingerprints,Waite's data on Patterns in Fingerprints,Fingerprints.csv
+Galton,Galton's data on the heights of parents and their children,Galton.csv
+GaltonFamilies,"Galton's data on the heights of parents and their children, by child",GaltonFamilies.csv
+Guerry,"Data from A.-M. Guerry, ""Essay on the Moral Statistics of France""",Guerry.csv
+Jevons,W. Stanley Jevons' data on numerical discrimination,Jevons.csv
+Langren.all,van Langren's Data on Longitude Distance between Toledo and Rome,Langren.all.csv
+Langren1644,van Langren's Data on Longitude Distance between Toledo and Rome,Langren1644.csv
+Macdonell,"Macdonell's Data on Height and Finger Length of Criminals, used by Gosset (1908)",Macdonell.csv
+MacdonellDF,"Macdonell's Data on Height and Finger Length of Criminals, used by Gosset (1908)",MacdonellDF.csv
+Michelson,Michelson's Determinations of the Velocity of Light,Michelson.csv
+MichelsonSets,Michelson's Determinations of the Velocity of Light,MichelsonSets.csv
+Minard.cities,Data from Minard's famous graphic map of Napoleon's march on Moscow,Minard.cities.csv
+Minard.temp,Data from Minard's famous graphic map of Napoleon's march on Moscow,Minard.temp.csv
+Minard.troops,Data from Minard's famous graphic map of Napoleon's march on Moscow,Minard.troops.csv
+Nightingale,Florence Nightingale's data on deaths from various causes in the Crimean War,Nightingale.csv
+OldMaps,Latitudes and Longitudes of 39 Points in 11 Old Maps,OldMaps.csv
+PearsonLee,Pearson and Lee's data on the heights of parents and children classified by gender,PearsonLee.csv
+PolioTrials,Polio Field Trials Data,PolioTrials.csv
+Prostitutes,Parent-Duchatelet's time-series data on the number of prostitutes in Paris,Prostitutes.csv
+Pyx,Trial of the Pyx,Pyx.csv
+Quarrels,Statistics of Deadly Quarrels,Quarrels.csv
+Snow.deaths,John Snow's map and data on the 1854 London Cholera outbreak,Snow.deaths.csv
+Snow.polygons,John Snow's map and data on the 1854 London Cholera outbreak,Snow.polygons.csv
+Snow.pumps,John Snow's map and data on the 1854 London Cholera outbreak,Snow.pumps.csv
+Snow.streets,John Snow's map and data on the 1854 London Cholera outbreak,Snow.streets.csv
+Wheat,Playfair's Data on Wages and the Price of Wheat,Wheat.csv
+Wheat.monarchs,Playfair's Data on Wages and the Price of Wheat,Wheat.monarchs.csv
+Yeast,Student's (1906) Yeast Cell Counts,Yeast.csv
+YeastD.mat,Student's (1906) Yeast Cell Counts,YeastD.mat.csv
+ZeaMays,Darwin's Heights of Cross- and Self-fertilized Zea May Pairs,ZeaMays.csv
+barley,Yield data from a Minnesota barley trial,barley.csv
+environmental,Atmospheric environmental conditions in New York City,environmental.csv
+ethanol,Engine exhaust fumes from burning ethanol,ethanol.csv
+melanoma,Melanoma skin cancer incidence,melanoma.csv
+singer,Heights of New York Choral Society singers,singer.csv
+Aids2,Australian AIDS Survival Data,Aids2.csv
+Animals,Brain and Body Weights for 28 Species,Animals.csv
+Boston,Housing Values in Suburbs of Boston,Boston.csv
+Cars93,Data from 93 Cars on Sale in the USA in 1993,Cars93.csv
+Cushings,Diagnostic Tests on Patients with Cushing's Syndrome,Cushings.csv
+DDT,DDT in Kale,DDT.csv
+GAGurine,Level of GAG in Urine of Children,GAGurine.csv
+Insurance,Numbers of Car Insurance claims,Insurance.csv
+Melanoma,Survival from Malignant Melanoma,Melanoma.csv
+OME,Tests of Auditory Perception in Children with OME,OME.csv
+Pima.te,Diabetes in Pima Indian Women,Pima.te.csv
+Pima.tr,Diabetes in Pima Indian Women,Pima.tr.csv
+Pima.tr2,Diabetes in Pima Indian Women,Pima.tr2.csv
+Rabbit,Blood Pressure in Rabbits,Rabbit.csv
+Rubber,Accelerated Testing of Tyre Rubber,Rubber.csv
+SP500,Returns of the Standard and Poors 500,SP500.csv
+Sitka,Growth Curves for Sitka Spruce Trees in 1988,Sitka.csv
+Sitka89,Growth Curves for Sitka Spruce Trees in 1989,Sitka89.csv
+Skye,AFM Compositions of Aphyric Skye Lavas,Skye.csv
+Traffic,Effect of Swedish Speed Limits on Accidents,Traffic.csv
+UScereal,Nutritional and Marketing Information on US Cereals,UScereal.csv
+UScrime,The Effect of Punishment Regimes on Crime Rates,UScrime.csv
+VA,Veteran's Administration Lung Cancer Trial,VA.csv
+abbey,Determinations of Nickel Content,abbey.csv
+accdeaths,Accidental Deaths in the US 1973-1978,accdeaths.csv
+anorexia,Anorexia Data on Weight Change,anorexia.csv
+bacteria,Presence of Bacteria after Drug Treatments,bacteria.csv
+beav1,Body Temperature Series of Beaver 1,beav1.csv
+beav2,Body Temperature Series of Beaver 2,beav2.csv
+biopsy,Biopsy Data on Breast Cancer Patients,biopsy.csv
+birthwt,Risk Factors Associated with Low Infant Birth Weight,birthwt.csv
+cabbages,Data from a cabbage field trial,cabbages.csv
+caith,Colours of Eyes and Hair of People in Caithness,caith.csv
+cats,Anatomical Data from Domestic Cats,cats.csv
+cement,Heat Evolved by Setting Cements,cement.csv
+chem,Copper in Wholemeal Flour,chem.csv
+coop,Co-operative Trial in Analytical Chemistry,coop.csv
+cpus,Performance of Computer CPUs,cpus.csv
+crabs,Morphological Measurements on Leptograpsus Crabs,crabs.csv
+deaths,Monthly Deaths from Lung Diseases in the UK,deaths.csv
+drivers,Deaths of Car Drivers in Great Britain 1969-84,drivers.csv
+eagles,Foraging Ecology of Bald Eagles,eagles.csv
+epil,Seizure Counts for Epileptics,epil.csv
+farms,Ecological Factors in Farm Management,farms.csv
+fgl,Measurements of Forensic Glass Fragments,fgl.csv
+forbes,Forbes' Data on Boiling Points in the Alps,forbes.csv
+galaxies,Velocities for 82 Galaxies,galaxies.csv
+gehan,Remission Times of Leukaemia Patients,gehan.csv
+genotype,Rat Genotype Data,genotype.csv
+geyser,Old Faithful Geyser Data,geyser.csv
+gilgais,Line Transect of Soil in Gilgai Territory,gilgais.csv
+hills,Record Times in Scottish Hill Races,hills.csv
+housing,Frequency Table from a Copenhagen Housing Conditions Survey,housing.csv
+immer,Yields from a Barley Field Trial,immer.csv
+leuk,Survival Times and White Blood Counts for Leukaemia Patients,leuk.csv
+mammals,Brain and Body Weights for 62 Species of Land Mammals,mammals.csv
+mcycle,Data from a Simulated Motorcycle Accident,mcycle.csv
+menarche,Age of Menarche in Warsaw,menarche.csv
+michelson,Michelson's Speed of Light Data,michelson.csv
+minn38,Minnesota High School Graduates of 1938,minn38.csv
+motors,Accelerated Life Testing of Motorettes,motors.csv
+muscle,Effect of Calcium Chloride on Muscle Contraction in Rat Hearts,muscle.csv
+newcomb,Newcomb's Measurements of the Passage Time of Light,newcomb.csv
+nlschools,Eighth-Grade Pupils in the Netherlands,nlschools.csv
+npk,"Classical N, P, K Factorial Experiment",npk.csv
+npr1,US Naval Petroleum Reserve No. 1 data,npr1.csv
+oats,Data from an Oats Field Trial,oats.csv
+painters,The Painter's Data of de Piles,painters.csv
+petrol,N. L. Prater's Petrol Refinery Data,petrol.csv
+quine,Absenteeism from School in Rural New South Wales,quine.csv
+road,Road Accident Deaths in US States,road.csv
+rotifer,Numbers of Rotifers by Fluid Density,rotifer.csv
+ships,Ships Damage Data,ships.csv
+shrimp,Percentage of Shrimp in Shrimp Cocktail,shrimp.csv
+shuttle,Space Shuttle Autolander Problem,shuttle.csv
+snails,Snail Mortality Data,snails.csv
+steam,The Saturated Steam Pressure Data,steam.csv
+stormer,The Stormer Viscometer Data,stormer.csv
+survey,Student Survey Data,survey.csv
+synth.te,Synthetic Classification Problem,synth.te.csv
+synth.tr,Synthetic Classification Problem,synth.tr.csv
+topo,Spatial Topographic Data,topo.csv
+waders,Counts of Waders at 15 Sites in South Africa,waders.csv
+whiteside,House Insulation: Whiteside's Data,whiteside.csv
+wtloss,Weight Loss Data from an Obese Patient,wtloss.csv
+Cigar,Cigarette Consumption,Cigar.csv
+Crime,Crime in North Carolina,Crime.csv
+EmplUK,Employment and Wages in the United Kingdom,EmplUK.csv
+Gasoline,Gasoline Consumption,Gasoline.csv
+Grunfeld,Grunfeld's Investment Data,Grunfeld.csv
+Hedonic,Hedonic Prices of Census Tracts in the Boston Area,Hedonic.csv
+LaborSupply,Wages and Hours Worked,LaborSupply.csv
+Males,Wages and Education of Young Males,Males.csv
+Produc,US States Production,Produc.csv
+Snmesp,Employment and Wages in Spain,Snmesp.csv
+SumHes,"The Penn World Table, v. 5",SumHes.csv
+Wages,Panel Data of Individual Wages,Wages.csv
+baseball,Yearly batting records for all major league baseball players,baseball.csv
+AustralianElectionPolling,"Political opinion polls in Australia, 2004-07",AustralianElectionPolling.csv
+AustralianElections,"elections to Australian House of Representatives, 1949-2007",AustralianElections.csv
+EfronMorris,"Batting Averages for 18 major league baseball players, 1970",EfronMorris.csv
+RockTheVote,"Voter turnout experiment, using Rock The Vote ads",RockTheVote.csv
+UKHouseOfCommons,1992 United Kingdom electoral returns,UKHouseOfCommons.csv
+absentee,Absentee and Machine Ballots in Pennsylvania State Senate Races,absentee.csv
+admit,Applications to a Political Science PhD Program,admit.csv
+bioChemists,article production by graduate students in biochemistry Ph.D. programs,bioChemists.csv
+ca2006,California Congressional Districts in 2006,ca2006.csv
+iraqVote,"U.S. Senate vote on the use of force against Iraq, 2002.",iraqVote.csv
+politicalInformation,Interviewer ratings of respondent levels of political information,politicalInformation.csv
+presidentialElections,"elections for U.S. President, 1932-2012, by state",presidentialElections.csv
+prussian,Prussian army horse kick data,prussian.csv
+unionDensity,cross national rates of trade union density,unionDensity.csv
+vote92,Reports of voting in the 1992 U.S. Presidential election.,vote92.csv
+french_fries,Sensory data from a french fries experiment.,french_fries.csv
+smiths,Demo data describing the Smiths.,smiths.csv
+tips,Tipping data,tips.csv
+car.test.frame,Automobile Data from 'Consumer Reports' 1990,car.test.frame.csv
+car90,Automobile Data from 'Consumer Reports' 1990,car90.csv
+cu.summary,Automobile Data from 'Consumer Reports' 1990,cu.summary.csv
+kyphosis,Data on Children who have had Corrective Spinal Surgery,kyphosis.csv
+solder,Soldering of Components on Printed-Circuit Boards,solder.csv
+stagec,Stage C Prostate Cancer,stagec.csv
+PublicSchools,US Expenditures for Public Schools,PublicSchools.csv
+Bollen,Bollen's Data on Industrialization and Political Democracy,Bollen.csv
+CNES,Variables from the 1997 Canadian National Election Study,CNES.csv
+Klein,Klein's Data on the U. S. Economy,Klein.csv
+Kmenta,Partly Artificial Data on the U. S. Economy,Kmenta.csv
+Tests,Six Mental Tests,Tests.csv
+bladder,Bladder Cancer Recurrences,bladder.csv
+cancer,NCCTG Lung Cancer Data,cancer.csv
+cgd,Chronic Granulotomous Disease data,cgd.csv
+colon,Chemotherapy for Stage B/C colon cancer,colon.csv
+flchain,Assay of serum free light chain for 7874 subjects.,flchain.csv
+heart,Stanford Heart Transplant data,heart.csv
+kidney,Kidney catheter data,kidney.csv
+leukemia,Acute Myelogenous Leukemia survival data,leukemia.csv
+logan,Data from the 1972-78 GSS data used by Logan,logan.csv
+lung,NCCTG Lung Cancer Data,lung.csv
+mgus,Monoclonal gammapothy data,mgus.csv
+nwtco,Data from the National Wilm's Tumor Study,nwtco.csv
+ovarian,Ovarian Cancer Survival Data,ovarian.csv
+pbc,Mayo Clinic Primary Biliary Cirrhosis Data,pbc.csv
+rats,Rat treatment data from Mantel et al,rats.csv
+stanford2,More Stanford Heart Transplant data,stanford2.csv
+tobin,Tobin's Tobit data,tobin.csv
+veteran,Veterans' Administration Lung Cancer study,veteran.csv
+Arthritis,Arthritis Treatment Data,Arthritis.csv
+Baseball,Baseball Data,Baseball.csv
+BrokenMarriage,Broken Marriage Data,BrokenMarriage.csv
+Bundesliga,Ergebnisse der Fussball-Bundesliga,Bundesliga.csv
+Bundestag2005,Votes in German Bundestag Election 2005,Bundestag2005.csv
+Butterfly,Butterfly Species in Malaya,Butterfly.csv
+CoalMiners,Breathlessness and Wheeze in Coal Miners,CoalMiners.csv
+DanishWelfare,Danish Welfare Study Data,DanishWelfare.csv
+Employment,Employment Status,Employment.csv
+Federalist,'May' in Federalist Papers,Federalist.csv
+Hitters,Hitters Data,Hitters.csv
+HorseKicks,Death by Horse Kicks,HorseKicks.csv
+Hospital,Hospital data,Hospital.csv
+JobSatisfaction,Job Satisfaction Data,JobSatisfaction.csv
+JointSports,Opinions About Joint Sports,JointSports.csv
+Lifeboats,Lifeboats on the Titanic,Lifeboats.csv
+NonResponse,Non-Response Survey Data,NonResponse.csv
+OvaryCancer,Ovary Cancer Data,OvaryCancer.csv
+PreSex,Pre-marital Sex and Divorce,PreSex.csv
+Punishment,Corporal Punishment Data,Punishment.csv
+RepVict,Repeat Victimization Data,RepVict.csv
+Saxony,Families in Saxony,Saxony.csv
+SexualFun,Sex is Fun,SexualFun.csv
+SpaceShuttle,Space Shuttle O-ring Failures,SpaceShuttle.csv
+Suicide,Suicide Rates in Germany,Suicide.csv
+Trucks,Truck Accidents Data,Trucks.csv
+UKSoccer,UK Soccer Scores,UKSoccer.csv
+VisualAcuity,Visual Acuity in Left and Right Eyes,VisualAcuity.csv
+VonBort,Von Bortkiewicz Horse Kicks Data,VonBort.csv
+WeldonDice,Weldon's Dice Data,WeldonDice.csv
+WomenQueue,Women in Queues,WomenQueue.csv
+MatchIt.url,Table of links for Zelig,MatchIt.url.csv
+PErisk,Political Economic Risk Data from 62 Countries in 1987,PErisk.csv
+SupremeCourt,U.S. Supreme Court Vote Matrix,SupremeCourt.csv
+Weimar,1932 Weimar election data,Weimar.csv
+Zelig.url,Table of links for Zelig,Zelig.url.csv
+approval,U.S. Presidential Approval Data,approval.csv
+bivariate,Sample data for bivariate probit regression,bivariate.csv
+coalition,Coalition Dissolution in Parliamentary Democracies,coalition.csv
+coalition2,"Coalition Dissolution in Parliamentary Democracies, Modified Version",coalition2.csv
+eidat,Simulation Data for Ecological Inference,eidat.csv
+free1,Freedom of Speech Data,free1.csv
+free2,Freedom of Speech Data,free2.csv
+friendship,Simulated Example of Schoolchildren Friendship Network,friendship.csv
+grunfeld,Simulation Data for model Seemingly Unrelated Regression (sur) that corresponds to method SUR of systemfit,grunfeld.csv
+hoff,Social Security Expenditure Data,hoff.csv
+homerun,Sample Data on Home Runs Hit By Mark McGwire and Sammy Sosa in 1998.,homerun.csv
+immi1,Individual Preferences Over Immigration Policy,immi1.csv
+immi2,Individual Preferences Over Immigration Policy,immi2.csv
+immi3,Individual Preferences Over Immigration Policy,immi3.csv
+immi4,Individual Preferences Over Immigration Policy,immi4.csv
+immi5,Individual Preferences Over Immigration Policy,immi5.csv
+immigration,Individual Preferences Over Immigration Policy,immigration.csv
+klein,Simulation Data for model Two-Stage Least Square (twosls) that corresponds to method 2SLS of systemfit,klein.csv
+kmenta,Simulation Data for model Three-Stage Least Square (threesls) that corresponds to method 3SLS of systemfit,kmenta.csv
+macro,Macroeconomic Data,macro.csv
+mexico,Voting Data from the 1988 Mexican Presidental Election,mexico.csv
+mid,Militarized Interstate Disputes,mid.csv
+newpainters,The Discretized Painter's Data of de Piles,newpainters.csv
+sanction,Multilateral Economic Sanctions,sanction.csv
+sna.ex,Simulated Example of Social Network Data,sna.ex.csv
+swiss,Swiss Fertility and Socioeconomic Indicators (1888) Data,swiss.csv
+tobin,Tobin's Tobit Data,tobin.csv
+turnout,Turnout Data Set from the National Election Survey,turnout.csv
+voteincome,Sample Turnout and Demographic Data from the 2000 Current Population Survey,voteincome.csv
+BCG,BCG Vaccine Data,BCG.csv
+BtheB,Beat the Blues Data,BtheB.csv
+CYGOB1,CYG OB1 Star Cluster Data,CYGOB1.csv
+Forbes2000,The Forbes 2000 Ranking of the World's Biggest Companies (Year 2004),Forbes2000.csv
+GHQ,General Health Questionnaire,GHQ.csv
+Lanza,Prevention of Gastointestinal Damages,Lanza.csv
+agefat,Total Body Composision Data,agefat.csv
+aspirin,Aspirin Data,aspirin.csv
+birthdeathrates,Birth and Death Rates Data,birthdeathrates.csv
+bladdercancer,Bladder Cancer Data,bladdercancer.csv
+clouds,Cloud Seeding Data,clouds.csv
+epilepsy,Epilepsy Data,epilepsy.csv
+foster,Foster Feeding Experiment,foster.csv
+heptathlon,Olympic Heptathlon Seoul 1988,heptathlon.csv
+mastectomy,Survival Times after Mastectomy of Breast Cancer Patients,mastectomy.csv
+meteo,Meteorological Measurements for 11 Years,meteo.csv
+orallesions,Oral Lesions in Rural India,orallesions.csv
+phosphate,Phosphate Level Data,phosphate.csv
+pistonrings,Piston Rings Failures,pistonrings.csv
+planets,Exoplanets Data,planets.csv
+plasma,Blood Screening Data,plasma.csv
+polyps,Familial Andenomatous Polyposis,polyps.csv
+polyps3,Familial Andenomatous Polyposis,polyps3.csv
+pottery,Romano-British Pottery Data,pottery.csv
+rearrests,Rearrests of Juvenile Felons,rearrests.csv
+respiratory,Respiratory Illness Data,respiratory.csv
+roomwidth,Students Estimates of Lecture Room Width,roomwidth.csv
+schizophrenia,Age of Onset of Schizophrenia Data,schizophrenia.csv
+schizophrenia2,Schizophrenia Data,schizophrenia2.csv
+schooldays,Days not Spent at School,schooldays.csv
+skulls,Egyptian Skulls,skulls.csv
+smoking,Nicotine Gum and Smoking Cessation,smoking.csv
+students,Student Risk Taking,students.csv
+suicides,Crowd Baiting Behaviour and Suicides,suicides.csv
+toothpaste,Toothpaste Data,toothpaste.csv
+voting,House of Representatives Voting Data,voting.csv
+water,Mortality and Water Hardness,water.csv
+watervoles,Water Voles Data,watervoles.csv
+waves,Electricity from Wave Power at Sea,waves.csv
+weightgain,Gain in Weight of Rats,weightgain.csv
+womensrole,Womens Role in Society,womensrole.csv
+Bechtoldt,Seven data sets showing a bifactor solution.,Bechtoldt.csv
+Bechtoldt.1,Seven data sets showing a bifactor solution.,Bechtoldt.1.csv
+Bechtoldt.2,Seven data sets showing a bifactor solution.,Bechtoldt.2.csv
+Dwyer,8 cognitive variables used by Dwyer for an example.,Dwyer.csv
+Gleser,"Example data from Gleser, Cronbach and Rajaratnam (1965) to show basic principles of generalizability theory.",Gleser.csv
+Gorsuch,Example data set from Gorsuch (1997) for an example factor extension.,Gorsuch.csv
+Harman.5,5 socio-economic variables from Harman (1967),Harman.5.csv
+Harman.8,"Correlations of eight physical variables (from Harman, 1966)",Harman.8.csv
+Harman.political,Eight political variables used by Harman (1967) as example 8.17,Harman.political.csv
+Holzinger,Seven data sets showing a bifactor solution.,Holzinger.csv
+Holzinger.9,Seven data sets showing a bifactor solution.,Holzinger.9.csv
+Reise,Seven data sets showing a bifactor solution.,Reise.csv
+Schmid,12 variables created by Schmid and Leiman to show the Schmid-Leiman Transformation,Schmid.csv
+Thurstone,Seven data sets showing a bifactor solution.,Thurstone.csv
+Thurstone.33,Seven data sets showing a bifactor solution.,Thurstone.33.csv
+Tucker,9 Cognitive variables discussed by Tucker and Lewis (1973),Tucker.csv
+ability,16 ability items scored as correct or incorrect.,ability.csv
+affect,Two data sets of affect and arousal scores as a function of personality and movie conditions,affect.csv
+bfi,25 Personality items representing 5 factors,bfi.csv
+bfi.dictionary,25 Personality items representing 5 factors,bfi.dictionary.csv
+blot,Bond's Logical Operations Test - BLOT,blot.csv
+burt,11 emotional variables from Burt (1915),burt.csv
+cities,Distances between 11 US cities,cities.csv
+cubits,Galton's example of the relationship between height and 'cubit' or forearm length,cubits.csv
+cushny,"A data set from Cushny and Peebles (1905) on the effect of three drugs on hours of sleep, used by Student (1908)",cushny.csv
+epi,Eysenck Personality Inventory (EPI) data for 3570 participants,epi.csv
+epi.bfi,13 personality scales from the Eysenck Personality Inventory and Big 5 inventory,epi.bfi.csv
+epi.dictionary,Eysenck Personality Inventory (EPI) data for 3570 participants,epi.dictionary.csv
+galton,Galton's Mid parent child height data,galton.csv
+heights,A data.frame of the Galton (1888) height and cubit data set.,heights.csv
+income,US family income from US census 2008,income.csv
+iqitems,16 multiple choice IQ items,iqitems.csv
+msq,75 mood items from the Motivational State Questionnaire for 3896 participants,msq.csv
+neo,NEO correlation matrix from the NEO_PI_R manual,neo.csv
+peas,Galton's Peas,peas.csv
+sat.act,"3 Measures of ability: SATV, SATQ, ACT",sat.act.csv
+withinBetween,An example of the distinction between within group and between group correlations,withinBetween.csv
+Bosco,Boscovich Data,Bosco.csv
+CobarOre,Cobar Ore data,CobarOre.csv
+Mammals,Garland(1983) Data on Running Speed of Mammals,Mammals.csv
+barro,Barro Data,barro.csv
+engel,Engel Data,engel.csv
+uis,UIS Drug Treatment study data,uis.csv
+dietox,Growth curves of pigs in a 3x3 factorial experiment,dietox.csv
+koch,Ordinal Data from Koch,koch.csv
+ohio,Ohio Children Wheeze Status,ohio.csv
+respdis,Clustered Ordinal Respiratory Disorder,respdis.csv
+respiratory,Data from a clinical trial comparing two treatments for a respiratory illness,respiratory.csv
+seizure,Epiliptic Seizures,seizure.csv
+sitka89,Growth of Sitka Spruce Trees,sitka89.csv
+spruce,Log-size of 79 Sitka spruce trees,spruce.csv
+liver,Liver related laboratory data,liver.csv
+portpirie,"Rain, wavesurge and portpirie datasets.",portpirie.csv
+rain,"Rain, wavesurge and portpirie datasets.",rain.csv
+summer,"Air pollution data, separately for summer and winter months",summer.csv
+wavesurge,"Rain, wavesurge and portpirie datasets.",wavesurge.csv
+winter,"Air pollution data, separately for summer and winter months",winter.csv
+arthritis,Rheumatoid Arthritis Clinical Trial,arthritis.csv
+housing,Homeless Data,housing.csv
+bmw,Daily Log Returns on BMW Share Price,bmw.csv
+danish,Danish Fire Insurance Claims,danish.csv
+nidd.annual,The River Nidd Data,nidd.annual.csv
+nidd.thresh,The River Nidd Data,nidd.thresh.csv
+siemens,Daily Log Returns on Siemens Share Price,siemens.csv
+sp.raw,SP Data to June 1993,sp.raw.csv
+spto87,SP Return Data to October 1987,spto87.csv
+Dyestuff,Yield of dyestuff by batch,Dyestuff.csv
+Dyestuff2,Yield of dyestuff by batch,Dyestuff2.csv
+InstEval,University Lecture/Instructor Evaluations by Students at ETH,InstEval.csv
+Pastes,Paste strength by batch and cask,Pastes.csv
+Penicillin,Variation in penicillin testing,Penicillin.csv
+VerbAgg,Verbal Aggression item responses,VerbAgg.csv
+cake,Breakage Angle of Chocolate Cakes,cake.csv
+cbpp,Contagious bovine pleuropneumonia,cbpp.csv
+grouseticks,Data on red grouse ticks from Elston et al. 2001,grouseticks.csv
+sleepstudy,Reaction times in a sleep deprivation study,sleepstudy.csv
