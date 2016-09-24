@@ -57,14 +57,15 @@
                 <h2>2. Select the columns that you want to chart. You may also want to change the type of chart, and for their data types.</h2>
                 <table ng-if="tableData.length" class="table table-striped table-hover table-condensed">
                     <tr>
-                        <th>columnName</th>
-                        <th>chart</th>
-                        <th>dataType</th>
-                        <th>chartType</th>
-                        <th>cap</th>
-                        <th>groupBy</th>
-                        <th>ordering</th>
-                        <th>colorScale</th>
+                        <th>Column Name</th>
+                        <th>Chart it?</th>
+                        <th>Data Type</th>
+                        <th>Chart Type</th>
+                        <th>Cap # of rows</th>
+                        <th>Group by?</th>
+                        <th>Ordering</th>
+                        <th>Time Scale</th>
+                        <th>Color Scale</th>
                     </tr>
                     <tr ng-repeat="row in tableData">
                         <td>{{row.columnName}}</td>
@@ -73,15 +74,16 @@
                         </td>
                         <td>
                             <select ng-model="row.dataType">
-                                <option value="string">string</option>
-                                <option value="number">number</option>
-                                <option value="date">date</option>
+                                <option value="string">String</option>
+                                <option value="number">Number</option>
+                                <option value="date">Date</option>
                             </select>
                         </td>
                         <td>
                             <select ng-model="row.chartType">
-                                <option value="row">row</option>
-                                <option value="time">time</option>
+                                <option value="row">Row</option>
+                                <option value="bar">Bar</option>
+                                <option value="time">Time</option>
                             </select>
                         </td>
                         <td>
@@ -94,11 +96,22 @@
                             <input type="checkbox" ng-model="row.ordering">
                         </td>
                         <td>
+                            <select ng-model="row.timeScale">
+                                <option value="seconds">Seconds</option>
+                                <option value="minutes">Minutes</option>
+                                <option value="hours">Hours</option>
+                                <option value="days">Days</option>
+                                <option value="weeks">Weeks</option>
+                                <option value="months">Months</option>
+                                <option value="years">Years</option>
+                            </select>
+                        </td>
+                        <td>
                             <select ng-model="row.colorScale">
-                                <option value="category10">category10</option>
-                                <option value="category20">category20</option>
-                                <option value="category20b">category20b</option>
-                                <option value="category20c">category20c</option>
+                                <option value="category10">Category10</option>
+                                <option value="category20">Category20</option>
+                                <option value="category20b">Category20b</option>
+                                <option value="category20c">Category20c</option>
                             </select>
                         </td>
                     </tr>
@@ -112,7 +125,7 @@
                 <div class="grid" id="grid">
                     <div ng-repeat="chart in chartData" class="flexChart">
                         <div>
-                            <dc-chart dimension="chart.dimension" group="chart.group" extent="chart.extent" data-type="chart.dataType" chart-type="chart.chartType" cap="chart.cap" ordering="chart.ordering" color-scale="chart.colorScale">
+                            <dc-chart dimension="chart.dimension" group="chart.group" extent="chart.extent" data-type="chart.dataType" chart-type="chart.chartType" cap="chart.cap" ordering="chart.ordering" time-scale="chart.timeScale" color-scale="chart.colorScale">
                                 <h4>{{chart.columnName}}</h4><a class="reset">reset</a>
                             </dc-chart>
                         </div>

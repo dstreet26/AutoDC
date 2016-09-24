@@ -70,6 +70,7 @@ app.controller('AutoDCController', function($scope, $http) {
                     cap: 10,
                     groupBy: false,
                     ordering: true,
+                    timeScale: 'weeks',
                     colorScale: "category10"
 
                 }
@@ -97,6 +98,7 @@ app.controller('AutoDCController', function($scope, $http) {
         })
 
         $scope.autoDCCrossfilter = crossfilter(newData);
+        console.log(newData)
 
         var newChartData = [];
         var dcDataTableColumns = []
@@ -108,7 +110,18 @@ app.controller('AutoDCController', function($scope, $http) {
                 chartObject.ordering = tableRow.ordering;
                 chartObject.colorScale = tableRow.colorScale;
                 chartObject.groupBy = tableRow.groupBy;
+                chartObject.timeScale = tableRow.timeScale;
                 chartObject.columnName = tableRow.columnName;
+
+                //Calculate the extent if it's a bar
+                if (chartObject.chartType == 'bar') {
+                    var values = _.map(newData, function(d) {
+                        return +d[chartObject.columnName]
+                    })
+                    chartObject.extent = d3.extent(values)
+                }
+
+                //Parse dates into date objects if it's a time
 
                 chartObject.dimension = $scope.autoDCCrossfilter.dimension(function(d) {
                     return d[tableRow.columnName]
@@ -162,14 +175,28 @@ app.directive('dcChart', function() {
     function link(scope, element, attr) {
 
         var chartElement = null;
+        var margins = {
+            top: 20,
+            left: 10,
+            right: 10,
+            bottom: 20
+        }
 
         //TODO: turn into switch statement (row, barchart, donut, etc.)
         //TODO: add more chart types
         if (scope.chartType == 'row') {
             chartElement = dc.rowChart(element[0]);
-        } else {
+        } else if (scope.chartType == 'bar' || scope.chartType == 'time') {
+            margins = {
+                top: 20,
+                left: 30,
+                right: 10,
+                bottom: 20
+            }
             chartElement = dc.barChart(element[0]);
+
         }
+
 
 
         var a = angular.element(element[0].querySelector('a.reset'));
@@ -187,35 +214,46 @@ app.directive('dcChart', function() {
                 chartElement
                     .width(element[0].parentElement.clientWidth)
                     .height(element[0].parentElement.clientHeight)
-                    .margins({
-                        top: 20,
-                        left: 10,
-                        right: 10,
-                        bottom: 20
-                    })
-
-                if (scope.ordering) {
-                    chartElement.ordering(function(d) {
-                        return -d.value;
-                    })
-                }
-
-                if (scope.cap) {
-                    chartElement.cap(scope.cap)
-                }
-
-
-                if (scope.colorScale) {
-                    chartElement.colors(d3.scale[scope.colorScale]())
-                }
-
-
-                chartElement
+                    .margins(margins)
                     .dimension(scope.dimension)
                     .group(scope.group)
-                    .elasticX(true)
-                    .xAxis()
-                    .ticks(4);
+
+
+                switch (scope.chartType) {
+                    case 'row':
+                        if (scope.ordering) {
+                            chartElement.ordering(function(d) {
+                                return -d.value;
+                            })
+                        }
+
+                        chartElement
+                            .cap(scope.cap)
+                            .colors(d3.scale[scope.colorScale]())
+                            .elasticX(true)
+                            .xAxis()
+                            .ticks(4);
+
+                        break;
+                    case 'bar':
+                        chartElement
+                            .elasticY(true)
+                            .x(d3.scale.linear().domain(scope.extent))
+                            // .x(d3.scale.linear().domain([0, 55]))
+                            .renderHorizontalGridLines(true)
+                            .yAxis().ticks(4);
+                        break;
+                    case 'time':
+                        chartElement
+                            .elasticY(true)
+                            .xUnits(d3.time.hours)
+                            .x(d3.time.scale().domain(scope.extent))
+                            .renderHorizontalGridLines(true)
+                            .yAxis().ticks(4);
+                        break;
+                }
+
+
 
                 chartElement.render();
             }
@@ -250,6 +288,7 @@ app.directive('dcChart', function() {
             chartType: '=',
             cap: '=',
             ordering: '=',
+            timeScale: '=',
             colorScale: '='
 
         }
