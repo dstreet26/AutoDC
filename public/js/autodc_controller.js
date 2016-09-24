@@ -149,15 +149,14 @@ app.controller('AutoDCController', function($scope, $http) {
 app.directive('dcChart', function() {
     function link(scope, element, attr) {
 
-        //TODO: is this needed?
         var chartElement = null;
 
         //TODO: turn into switch statement (row, barchart, donut, etc.)
         //TODO: add more chart types
         if (scope.chartType == 'row') {
-            var chartElement = dc.rowChart(element[0]);
+            chartElement = dc.rowChart(element[0]);
         } else {
-            var chartElement = dc.barChart(element[0]);
+            chartElement = dc.barChart(element[0]);
         }
 
 
@@ -246,13 +245,3 @@ app.directive('dcChart', function() {
 });
 
 
-
-app.filter('bytes', function() {
-    return function(bytes, precision) {
-        if (isNaN(parseFloat(bytes)) || !isFinite(bytes)) return '-';
-        if (typeof precision === 'undefined') precision = 1;
-        var units = ['bytes', 'kB', 'MB', 'GB', 'TB', 'PB'],
-            number = Math.floor(Math.log(bytes) / Math.log(1024));
-        return (bytes / Math.pow(1024, Math.floor(number))).toFixed(precision) + ' ' + units[number];
-    }
-});
