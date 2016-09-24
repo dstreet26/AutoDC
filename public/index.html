@@ -71,14 +71,36 @@
                         <td>
                             <input type="checkbox" ng-model="row.chart">
                         </td>
-                        <td>{{row.dataType}}</td>
-                        <td>{{row.chartType}}</td>
-                        <td>{{row.cap}}</td>
+                        <td>
+                            <select ng-model="row.dataType">
+                                <option value="string">string</option>
+                                <option value="number">number</option>
+                                <option value="date">date</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select ng-model="row.chartType">
+                                <option value="row">row</option>
+                                <option value="time">time</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" ng-model="row.cap">
+                        </td>
                         <td>
                             <input type="radio" name="orderByGroup" ng-model="row.groupBy" ng-value="true">
                         </td>
-                        <td>{{row.ordering}}</td>
-                        <td>{{row.colorScale}}</td>
+                        <td>
+                            <input type="checkbox" ng-model="row.ordering">
+                        </td>
+                        <td>
+                            <select ng-model="row.colorScale">
+                                <option value="category10">category10</option>
+                                <option value="category20">category20</option>
+                                <option value="category20b">category20b</option>
+                                <option value="category20c">category20c</option>
+                            </select>
+                        </td>
                     </tr>
                 </table>
                 <button class="btn btn-primary" ng-click="generateChartData()">Go!<span class="glyphicon glyphicon-open"></span></button>
