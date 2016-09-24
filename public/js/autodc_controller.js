@@ -62,19 +62,19 @@ app.controller('AutoDCController', function($scope, $http) {
         //Get the keys of our data. For each key, initialize an object
 
         $scope.tableData = _.map(_.keys(csvData[0]), function(key) {
-            return {
-                columnName: key,
-                chart: false,
-                dataType: 'string',
-                chartType: 'row',
-                cap: 10,
-                groupBy: false,
-                ordering: true,
-                colorScale: "category10"
+                return {
+                    columnName: key,
+                    chart: false,
+                    dataType: 'string',
+                    chartType: 'row',
+                    cap: 10,
+                    groupBy: false,
+                    ordering: true,
+                    colorScale: "category10"
 
-            }
-        })
-        //Set the first row to have the groupBy radio button checked
+                }
+            })
+            //Set the first row to have the groupBy radio button checked
         $scope.tableData[0].groupBy = true;
     }
 
@@ -144,7 +144,19 @@ app.controller('AutoDCController', function($scope, $http) {
 
     }
 
+    $scope.saveData = function() {
+        var data = $scope.chartData[0].dimension.top(Infinity)
+        var outputCSV = Papa.unparse(data)
+        var blob = new Blob([outputCSV], { type: "text/csv;charset=utf-8" });
+        saveAs(blob, "filtered_data.csv");
+    };
+
 })
+
+
+
+
+
 
 app.directive('dcChart', function() {
     function link(scope, element, attr) {
@@ -243,5 +255,3 @@ app.directive('dcChart', function() {
         }
     };
 });
-
-
