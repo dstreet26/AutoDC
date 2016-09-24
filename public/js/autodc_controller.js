@@ -98,56 +98,99 @@ app.controller('AutoDCController', function($scope, $http) {
         })
 
         $scope.autoDCCrossfilter = crossfilter(newData);
-        console.log(newData)
 
         var newChartData = [];
         var dcDataTableColumns = []
-        _.each($scope.tableData, function(tableRow) {
-            if (tableRow.chart) {
-                var chartObject = {};
-                chartObject.chartType = tableRow.chartType;
-                chartObject.cap = tableRow.cap;
-                chartObject.ordering = tableRow.ordering;
-                chartObject.colorScale = tableRow.colorScale;
-                chartObject.groupBy = tableRow.groupBy;
-                chartObject.timeScale = tableRow.timeScale;
-                chartObject.columnName = tableRow.columnName;
 
-                //Calculate the extent if it's a bar
-                if (tableRow.chartType == 'bar' && tableRow.dataType == 'number') {
-                    var values = _.map(newData, function(d) {
-                        return +d[tableRow.columnName]
-                    })
-                    chartObject.extent = d3.extent(values)
-                }
+        //Filter to only rows that we need to work add
+        var rowsToChart = _.filter($scope.tableData, 'chart')
 
-                //Parse dates into date objects if it's a time
-                if (tableRow.chartType == 'time' && tableRow.dataType == 'date') {
-                    var values = [];
-                    _.each(newData, function(d) {
-                        var inputDate = d[tableRow.columnName].toString()
-                        var parsedDate = moment(inputDate)
-                        var dateObject = parsedDate.toDate()
-                        d[tableRow.columnName] = dateObject
-                        values.push(dateObject)
-                    })
-                    chartObject.extent = d3.extent(values)
-                }
-
-                chartObject.dimension = $scope.autoDCCrossfilter.dimension(function(d) {
-                    return d[tableRow.columnName]
-                })
-                chartObject.group = chartObject.dimension.group();
-                newChartData.push(chartObject);
-
-                dcDataTableColumns.push({
-                    label: tableRow.columnName,
-                    format: function(d) {
-                        return d[tableRow.columnName];
-                    }
-                });
-
+        //If none of the rows had a "Group By", then force the first one to have it
+        var numberOfGroupByRows = _.reduce(rowsToChart, function(sum, d) {
+            if (d.groupBy) {
+                return sum + 1;
             }
+            return sum;
+        }, 0)
+        if (numberOfGroupByRows < 1) {
+            rowsToChart[0].groupBy = true;
+        }
+
+        _.each(rowsToChart, function(tableRow) {
+
+            var chartObject = {};
+            chartObject.chartType = tableRow.chartType;
+            chartObject.cap = tableRow.cap;
+            chartObject.ordering = tableRow.ordering;
+            chartObject.colorScale = tableRow.colorScale;
+            chartObject.groupBy = tableRow.groupBy;
+            chartObject.timeScale = tableRow.timeScale;
+            chartObject.columnName = tableRow.columnName;
+
+            //Calculate the extent if it's a bar
+            if (tableRow.chartType == 'bar' && tableRow.dataType == 'number') {
+                var values = _.map(newData, function(d) {
+                    return +d[tableRow.columnName]
+                })
+                chartObject.extent = d3.extent(values)
+            }
+
+            //Parse dates into date objects if it's a time
+            if (tableRow.chartType == 'time' && tableRow.dataType == 'date') {
+                var values = [];
+                _.each(newData, function(d) {
+                    var inputDate = d[tableRow.columnName].toString()
+                    var parsedDate = moment(inputDate)
+                    var dateObject = parsedDate.toDate()
+
+                    var newDate = null;
+
+                    switch (tableRow.timeScale) {
+                        case 'seconds':
+                            newDate = d3.time.second(dateObject)
+                            break;
+                        case 'minutes':
+                            newDate = d3.time.minute(dateObject)
+                            break;
+                        case 'hours':
+                            newDate = d3.time.hour(dateObject)
+                            break;
+                        case 'days':
+                            newDate = d3.time.day(dateObject)
+                            break;
+                        case 'weeks':
+                            newDate = d3.time.week(dateObject)
+                            break;
+                        case 'months':
+                            newDate = d3.time.month(dateObject)
+                            break;
+                        case 'years':
+                            newDate = d3.time.year(dateObject)
+                            break;
+                    }
+
+
+
+                    d[tableRow.columnName] = newDate
+                    values.push(newDate)
+                })
+                chartObject.extent = d3.extent(values)
+            }
+
+            chartObject.dimension = $scope.autoDCCrossfilter.dimension(function(d) {
+                return d[tableRow.columnName]
+            })
+            chartObject.group = chartObject.dimension.group();
+            newChartData.push(chartObject);
+
+            dcDataTableColumns.push({
+                label: tableRow.columnName,
+                format: function(d) {
+                    return d[tableRow.columnName];
+                }
+            });
+
+
 
         })
         $scope.chartData = newChartData
