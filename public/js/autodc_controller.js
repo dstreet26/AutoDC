@@ -114,14 +114,25 @@ app.controller('AutoDCController', function($scope, $http) {
                 chartObject.columnName = tableRow.columnName;
 
                 //Calculate the extent if it's a bar
-                if (chartObject.chartType == 'bar') {
+                if (tableRow.chartType == 'bar' && tableRow.dataType == 'number') {
                     var values = _.map(newData, function(d) {
-                        return +d[chartObject.columnName]
+                        return +d[tableRow.columnName]
                     })
                     chartObject.extent = d3.extent(values)
                 }
 
                 //Parse dates into date objects if it's a time
+                if (tableRow.chartType == 'time' && tableRow.dataType == 'date') {
+                    var values = [];
+                    _.each(newData, function(d) {
+                        var inputDate = d[tableRow.columnName].toString()
+                        var parsedDate = moment(inputDate)
+                        var dateObject = parsedDate.toDate()
+                        d[tableRow.columnName] = dateObject
+                        values.push(dateObject)
+                    })
+                    chartObject.extent = d3.extent(values)
+                }
 
                 chartObject.dimension = $scope.autoDCCrossfilter.dimension(function(d) {
                     return d[tableRow.columnName]
@@ -182,8 +193,6 @@ app.directive('dcChart', function() {
             bottom: 20
         }
 
-        //TODO: turn into switch statement (row, barchart, donut, etc.)
-        //TODO: add more chart types
         if (scope.chartType == 'row') {
             chartElement = dc.rowChart(element[0]);
         } else if (scope.chartType == 'bar' || scope.chartType == 'time') {
@@ -239,14 +248,13 @@ app.directive('dcChart', function() {
                         chartElement
                             .elasticY(true)
                             .x(d3.scale.linear().domain(scope.extent))
-                            // .x(d3.scale.linear().domain([0, 55]))
                             .renderHorizontalGridLines(true)
                             .yAxis().ticks(4);
                         break;
                     case 'time':
                         chartElement
                             .elasticY(true)
-                            .xUnits(d3.time.hours)
+                            .xUnits(d3.time[scope.timeScale])
                             .x(d3.time.scale().domain(scope.extent))
                             .renderHorizontalGridLines(true)
                             .yAxis().ticks(4);
