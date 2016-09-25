@@ -34,8 +34,6 @@ IMAGE
 
 ## Run it yourself
 
-
-Install yourself 
 1. Get [npm](https://nodejs.org/en/)
 2. Install bower `npm install -g bower` (might need admin privileges)
 3. Get a static file-server like [http-server](https://github.com/indexzero/http-server), [Apache](https://www.apache.org/), [nginx](https://www.nginx.com/resources/wiki/), [Caddy](https://caddyserver.com/), or use Python's built-in [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
