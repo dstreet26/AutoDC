@@ -41,15 +41,13 @@ Install yourself
 3. Get a static file-server like [http-server](https://github.com/indexzero/http-server), [Apache](https://www.apache.org/), [nginx](https://www.nginx.com/resources/wiki/), [Caddy](https://caddyserver.com/), or use Python's built-in [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 4. Get the code, install dependencies, and serve the directory (this is using http-server)
 
-	git clone https://github.com/Weatherproof/AutoDC
-	
-	cd AutoDC
-	
-	npm install
-	
-	bower install 
-	
-	http-server .
+```shell
+git clone https://github.com/Weatherproof/AutoDC
+cd AutoDC
+npm install
+bower install 
+http-server .
+```
 
 ## Example Data Sets
 The example data sets were plucked from [PivotTable.js](http://nicolas.kruchten.com/pivottable/examples/) and [Raw.js](http://raw.densitydesign.org/)
