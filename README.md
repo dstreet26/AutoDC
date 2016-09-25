@@ -57,7 +57,7 @@ cd AutoDC
 bower install 
 http-server .
 ```
-Check it out: http://localhost:8080/public/index.html
+Check it out: [http://localhost:8080/public/index.html](http://localhost:8080/public/index.html)
 
 ## Example Data Sets
 The example data sets were plucked from [PivotTable.js](http://nicolas.kruchten.com/pivottable/examples/) and [Raw.js](http://raw.densitydesign.org/)
