@@ -1,3 +1,16 @@
+.jumbotron {
+    background-color: #489e8f;
+}
+
+.jumbotron h2 {
+    color: white;
+    font-size: -webkit-xxx-large;
+}
+
+.jumbotron h2 a {
+    color: #001dff;
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;
