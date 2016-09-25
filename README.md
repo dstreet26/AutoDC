@@ -42,9 +42,13 @@ Install yourself
 4. Get the code, install dependencies, and serve the directory (this is using http-server)
 
 	git clone https://github.com/Weatherproof/AutoDC
+	
 	cd AutoDC
+	
 	npm install
+	
 	bower install 
+	
 	http-server .
 
 ## Example Data Sets
