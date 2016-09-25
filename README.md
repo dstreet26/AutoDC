@@ -1,10 +1,10 @@
-#AutoDC
+# AutoDC
 Create one-time use [DC.js](https://dc-js.github.io/dc.js/) charts from csv files.
 
 
 
 
-##Some pictures
+## Some pictures
 
 Initial page load. Pick an example data set or upload your own. Then click the "Load Data" button.
 
@@ -32,7 +32,7 @@ Finally, the table at the bottom shows the filtered data in table-format. It als
 
 IMAGE
 
-##Run it yourself
+## Run it yourself
 
 
 Install yourself 
@@ -40,22 +40,21 @@ Install yourself
 2. Install bower `npm install -g bower` (might need admin privileges)
 3. Get a static file-server like [http-server](https://github.com/indexzero/http-server), [Apache](https://www.apache.org/), [nginx](https://www.nginx.com/resources/wiki/), [Caddy](https://caddyserver.com/), or use Python's built-in [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 4. Get the code, install dependencies, and serve the directory (this is using http-server)
-```
-git clone https://github.com/Weatherproof/AutoDC
-cd AutoDC
-npm install
-bower install
-http-server .
-```
 
-##Example Data Sets
+	git clone https://github.com/Weatherproof/AutoDC
+	cd AutoDC
+	npm install
+	bower install 
+	http-server .
+
+## Example Data Sets
 The example data sets were plucked from [PivotTable.js](http://nicolas.kruchten.com/pivottable/examples/) and [Raw.js](http://raw.densitydesign.org/)
 
 
 
 
 
-##Future Features
+## Future Features
 
 - An "advanced" view for creating a chart that has more grouping options, allows the user to pick the x-axis and y-axis dimensions, etc.
 - More chart types. DC.js has documentation for donut/pie, line, bubble, scatter, heatmap, choropleth, and boxplot.
