@@ -54,10 +54,10 @@ Create one-time use [DC.js](https://dc-js.github.io/dc.js/) charts from csv file
 ```shell
 git clone https://github.com/Weatherproof/AutoDC
 cd AutoDC
-npm install
 bower install 
 http-server .
 ```
+Check it out: http://localhost:8080/public/index.html
 
 ## Example Data Sets
 The example data sets were plucked from [PivotTable.js](http://nicolas.kruchten.com/pivottable/examples/) and [Raw.js](http://raw.densitydesign.org/)

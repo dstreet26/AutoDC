@@ -28,7 +28,7 @@ app.controller('AutoDCController', function($scope, $http) {
 
     //"Use this example" button
     $scope.loadExampleData = function() {
-        $http.get('./csv_examples/' + $scope.selectedCsvExample.FileName).success(function(data) {
+        $http.get('https://dstreet26.com/csv_examples/' + $scope.selectedCsvExample.FileName).success(function(data) {
             $scope.loadedCsvData = Papa.parse(data, {
                 header: true,
                 dynamicTyping: true
