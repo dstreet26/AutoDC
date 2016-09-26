@@ -212,6 +212,9 @@ app.controller('AutoDCController', function($scope, $http) {
             .size(50)
             .columns(dcDataTableColumns);
 
+        //Force render the datatable
+        dc.redrawAll();
+
     }
 
     $scope.saveData = function() {
