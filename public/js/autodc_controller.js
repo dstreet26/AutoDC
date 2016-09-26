@@ -77,6 +77,9 @@ app.controller('AutoDCController', function($scope, $http) {
             })
             //Set the first row to have the groupBy radio button checked
         $scope.tableData[0].groupBy = true;
+
+        //Reset the charts
+        $scope.chartData = []
     }
 
 
