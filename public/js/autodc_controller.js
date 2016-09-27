@@ -75,18 +75,38 @@ app.controller('AutoDCController', function($scope, $http) {
         //Get the keys of our data. For each key, initialize an object
 
         $scope.tableData = _.map(_.keys(csvData[0]), function(key) {
-                return {
+                //Default values
+                var rowObject = {
                     columnName: key,
-                    chart: false,
-                    dataType: 'string',
-                    chartType: 'row',
+                    chart: true,
                     cap: 10,
                     groupBy: false,
                     ordering: true,
                     timeScale: 'weeks',
                     colorScale: "category10"
+                }
+
+                //Grab a random data point from this input data column
+                var randomSample = _.sample(csvData)[key]
+
+                //Set the chart and datatype depending on that value
+                if (_.isString(randomSample)) {
+                    rowObject.dataType = 'string'
+                    rowObject.chartType = 'row'
 
                 }
+                if (_.isNumber(randomSample)) {
+                    rowObject.dataType = 'number'
+                    rowObject.chartType = 'bar'
+                }
+
+                //TODO: Figure out how to be certain that a value is a date and not a string/number
+                // if (Date.parse(randomSample) !== NaN) {
+                //     rowObject.dataType = 'date'
+                //     rowObject.chartType = 'time'
+                // }
+
+                return rowObject
             })
             //Set the first row to have the groupBy radio button checked
         $scope.tableData[0].groupBy = true;
