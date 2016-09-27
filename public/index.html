@@ -92,7 +92,7 @@
                             <input type="radio" name="orderByGroup" ng-model="row.groupBy" ng-value="true">
                         </td>
                         <td>
-                            <select ng-model="row.timeScale">
+                            <select ng-model="row.timeScale" ng-disabled="row.chartType !== 'time'">
                                 <option value="seconds">Seconds</option>
                                 <option value="minutes">Minutes</option>
                                 <option value="hours">Hours</option>
