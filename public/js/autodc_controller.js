@@ -343,7 +343,10 @@ app.directive('dcChart', function() {
                         break;
                 }
 
-
+                //Fix for not being able to scroll with the mousewheel after a bar chart has been filtered
+                //https://github.com/dc-js/dc.js/issues/991
+                chartElement._disableMouseZoom = function() {};
+                // chartElement.mouseZoomable(false)
 
                 chartElement.render();
             }
