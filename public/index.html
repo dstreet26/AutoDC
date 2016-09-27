@@ -57,22 +57,29 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>2. Select the columns that you want to chart. You may also want to change the type of chart, and for their data types.</h2>
-                <table ng-if="tableData.length" class="table table-striped table-hover table-condensed">
+                <table ng-if="tableData.length" class="table table-striped table-bordered table-hover table-condensed">
                     <tr>
                         <th>Column Name</th>
                         <th>Chart it?</th>
-                        <th>Data Type</th>
                         <th>Chart Type</th>
-                        <th>Cap # of rows</th>
+                        <th>Data Type</th>
                         <th>Group by?</th>
-                        <th>Ordering</th>
                         <th>Time Scale</th>
                         <th>Color Scale</th>
+                        <th>Cap # of rows</th>
+                        <th>Ordering</th>
                     </tr>
                     <tr ng-repeat="row in tableData">
                         <td>{{row.columnName}}</td>
                         <td>
                             <input type="checkbox" ng-model="row.chart">
+                        </td>
+                        <td>
+                            <select ng-model="row.chartType" ng-change="chartTypeChanged(row)">
+                                <option value="row">Row</option>
+                                <option value="bar">Bar</option>
+                                <option value="time">Time</option>
+                            </select>
                         </td>
                         <td>
                             <select ng-model="row.dataType">
@@ -82,20 +89,7 @@
                             </select>
                         </td>
                         <td>
-                            <select ng-model="row.chartType">
-                                <option value="row">Row</option>
-                                <option value="bar">Bar</option>
-                                <option value="time">Time</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input type="number" ng-model="row.cap">
-                        </td>
-                        <td>
                             <input type="radio" name="orderByGroup" ng-model="row.groupBy" ng-value="true">
-                        </td>
-                        <td>
-                            <input type="checkbox" ng-model="row.ordering">
                         </td>
                         <td>
                             <select ng-model="row.timeScale">
@@ -115,6 +109,12 @@
                                 <option value="category20b">Category20b</option>
                                 <option value="category20c">Category20c</option>
                             </select>
+                        </td>
+                        <td>
+                            <input type="number" ng-model="row.cap">
+                        </td>
+                        <td>
+                            <input type="checkbox" ng-model="row.ordering">
                         </td>
                     </tr>
                 </table>

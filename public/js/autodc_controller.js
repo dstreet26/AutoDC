@@ -56,6 +56,19 @@ app.controller('AutoDCController', function($scope, $http) {
         reader.readAsText(event.target.files[0]);
     });
 
+    $scope.chartTypeChanged = function(row) {
+        switch (row.chartType) {
+            case 'bar':
+                row.dataType = 'number'
+                break;
+            case 'row':
+                row.dataType = 'string'
+                break;
+            case 'time':
+                row.dataType = 'date'
+                break;
+        }
+    }
 
     //Initializes the configuration data that is used in both the table and the generated charts.
     $scope.generateTableData = function(csvData) {
