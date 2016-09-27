@@ -9,33 +9,25 @@ Create one-time use [DC.js](https://dc-js.github.io/dc.js/) charts from csv file
 
 ![Initial page load](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Initial%20page%20load.png "Initial page load")
 
+**A simple test example is the Cars dataset from [Raw.js](http://raw.densitydesign.org/)**
+
 ![Example Datasets](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Example%20Datasets.png "Example Datasets")
 
-**Use the table to choose which type of dc.js chart to create for each column detected in the csv file. Row charts work for most data types, Bar charts require numerical data, and Time charts require Dates. Click the "Go" button to create the actual charts.**
+**The table below shows all the columns and their datatypes that were found from the loaded data. It also selects default chart types and enables all the dimensions for charting. 
 
- ![Config Table](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Config%20Table.png "Config Table")
+![Config Table](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Config%20Table.png "Config Table")
 
-**To follow along, just select them all for charting by checking all the "Chart it?" buttons.**
-
- ![Selecting all](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Selecting%20all.png "Selecting all")
-
-**Here, 10 charts were created that are all Row charts. However, some of this data would be better suited for a numerical bar chart, so go back to the table and select "Number" and "Bar" for 8 of the columns.**
-
-![Generated charts 1](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Generated%20charts%201.png "Generated charts 1")
-
-![Changing chart types](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Changing%20chart%20types.png "Changing chart types")
-
-**Click the "Go!" button again to see the new charts**
+Row charts work for most data types, Bar charts require numerical data, and Time charts require Dates. Click the "Go" button to create the actual charts.**
 
 ![Generated charts 2](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Generated%20charts%202.png "Generated charts 2")
 
-**Let's filter for fast cars (low 0-60s time) and from that selection, lets pick the least economical ones (low mpg)**
+**Let's filter for fast cars (low 0-60s time).**
 
 ![Filtering fast cars](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Filtering%20fast%20cars.png "Filtering fast cars")
 
-![Filtering economic cars](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Filtering%20economic%20cars.png "Filtering economic cars")
+**By selecting/filtering a chart, notice that all the other charts updated immediately. Let's now pick the least economical ones (low mpg)**
 
-**While filtering, the other charts update in instantly**
+![Filtering economic cars](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Filtering%20economic%20cars.png "Filtering economic cars")
 
 **Below the charts is a counter showing on how many data points match the cross-filter criteria out of the total number of data points. Here you can download a copy of the filtered data.**
 
