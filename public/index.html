@@ -103,7 +103,7 @@
                             </select>
                         </td>
                         <td>
-                            <select ng-model="row.colorScale">
+                            <select ng-model="row.colorScale" ng-disabled="row.chartType !== 'row'">
                                 <option value="category10">Category10</option>
                                 <option value="category20">Category20</option>
                                 <option value="category20b">Category20b</option>
@@ -111,10 +111,10 @@
                             </select>
                         </td>
                         <td>
-                            <input type="number" ng-model="row.cap">
+                            <input type="number" ng-model="row.cap" ng-disabled="row.chartType !== 'row'">
                         </td>
                         <td>
-                            <input type="checkbox" ng-model="row.ordering">
+                            <input type="checkbox" ng-model="row.ordering" ng-disabled="row.chartType !== 'row'">
                         </td>
                     </tr>
                 </table>
