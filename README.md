@@ -13,11 +13,11 @@ Create one-time use [DC.js](https://dc-js.github.io/dc.js/) charts from csv file
 
 ![Example Datasets](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Example%20Datasets.png "Example Datasets")
 
-**The table below shows all the columns and their datatypes that were found from the loaded data. It also selects default chart types and enables all the dimensions for charting. 
+**The table below shows all the columns and their datatypes that were found from the loaded data. It also selects default chart types and enables all the dimensions for charting.**
 
 ![Config Table](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Config%20Table.png "Config Table")
 
-Row charts work for most data types, Bar charts require numerical data, and Time charts require Dates. Click the "Go" button to create the actual charts.**
+**Row charts work for most data types, Bar charts require numerical data, and Time charts require Dates. Click the "Go" button to create the actual charts.**
 
 ![Generated charts 2](https://github.com/Weatherproof/AutoDC/raw/master/doc/images/Generated%20charts%202.png "Generated charts 2")
 
