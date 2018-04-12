@@ -46,7 +46,9 @@ Create one-time use [DC.js](https://dc-js.github.io/dc.js/) charts from csv file
 ```shell
 git clone https://github.com/Weatherproof/AutoDC
 cd AutoDC
-bower install 
+npm i
+bower install
+npm run build
 http-server .
 ```
 Check it out: [http://localhost:8080/public/index.html](http://localhost:8080/public/index.html)
