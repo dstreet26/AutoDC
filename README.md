@@ -1,7 +1,7 @@
 # AutoDC
 Create one-time use [DC.js](https://dc-js.github.io/dc.js/) charts from csv files.
 
-## Try the [Demo](https://dstreet26.com/AutoDC/public/index.html)
+## Try the [Demo](https://davidstreeterconsulting.com/AutoDC/index.html)
 
 ## Some pictures
 
