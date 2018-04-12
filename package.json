@@ -1,0 +1,27 @@
+{
+  "name": "autodc",
+  "version": "1.0.0",
+  "description": "Create one-time use [DC.js](https://dc-js.github.io/dc.js/) charts from csv files.",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "yauzl": "^2.9.1"
+  },
+  "scripts": {
+    "setup": "node unzip.js public/csv_examples.zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstreet26/AutoDC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dstreet26/AutoDC/issues"
+  },
+  "homepage": "https://github.com/dstreet26/AutoDC#readme"
+}
