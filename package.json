@@ -5,14 +5,12 @@
   "directories": {
     "doc": "doc"
   },
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
     "yauzl": "^2.9.1"
   },
   "scripts": {
-    "setup": "node unzip.js public/csv_examples.zip"
+    "build": "node unzip.js public/csv_examples.zip"
   },
   "repository": {
     "type": "git",
